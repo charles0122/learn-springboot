@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user01" class="top.arce.pojo.User">
+        <property name="name" value="charles"/>
+        <property name="age" value="18"/>
+    </bean>
+    <bean id="pet01" class="top.arce.pojo.Pet">
+        <property name="name" value="Christine"/>
+    </bean>
+</beans>
