@@ -14,10 +14,10 @@ public class BootstudyApplication {
         ConfigurableApplicationContext run = SpringApplication.run(BootstudyApplication.class, args);
 
         //查看容器内的所有组件
-        //String[] names = run.getBeanDefinitionNames();
-        //for (String name : names) {
-        //    System.out.println(name);
-        //}
+        String[] names = run.getBeanDefinitionNames();
+        for (String name : names) {
+            System.out.println(name);
+        }
 
         //从容器中获取组件
         User user01 = run.getBean("user01", User.class);
@@ -29,6 +29,9 @@ public class BootstudyApplication {
         System.out.println(user);
         //通过调用容器中配置类的方法来返回一个实例
         System.out.println(user==user01);
+
+
+
     }
 
 
