@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import top.arce.pojo.Car;
+import top.arce.pojo.Person;
 
 /**
  * @program: bootstudy
@@ -19,6 +20,8 @@ public class HelloController {
 
     @Autowired
     Car car;
+    @Autowired
+    Person person;
 
     @RequestMapping("/car")
     public Car car(){
@@ -26,8 +29,12 @@ public class HelloController {
     }
 
     @GetMapping("/hello")
-    @ResponseBody
     public String hello(){
         return "hello";
+    }
+
+    @RequestMapping("/person")
+    public Person person(){
+        return person;
     }
 }

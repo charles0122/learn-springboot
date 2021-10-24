@@ -18,7 +18,7 @@ import top.arce.pojo.User;
  **/
 //告诉spring 这是一个配置类 等同于以前写的配置文件
 @Import({User.class, DBHelper.class})
-@ImportResource("classpath:beans.xml")
+//@ImportResource("classpath:beans.xml")
 @Configuration(proxyBeanMethods=true)
 @EnableConfigurationProperties(Car.class)
 public class MyConfig {
@@ -29,6 +29,6 @@ public class MyConfig {
 
     @Bean
     public Pet pet01(){
-        return new Pet("Christine");
+        return new Pet("Christine",10.0);
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @author: charles
  * @create: 2021-10-24 15:19
  **/
-@Component
+//@Component
 @ConfigurationProperties(prefix = "mycar")
 public class Car {
     public String getBrand() {
